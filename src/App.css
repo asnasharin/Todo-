@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.app{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    height: 80vh;
+    border: 2px solid blue;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.todoform{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+    width:80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
 }
+button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+}
+.alltodos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.singletodo{
+    border-radius: 50px;
+    margin: 12px 0;
+    background-color: #5dadf8;
+    padding: 10px 20px;
+    display: flex;
+    width: 450px; 
+    align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.todotext{
+    flex: 1;
 }
